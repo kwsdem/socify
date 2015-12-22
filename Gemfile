@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
+gem 'thin'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
@@ -32,11 +33,13 @@ end
 
 group :production do
   gem 'pg'
-  gem 'unicorn'
+  
   gem 'cloudinary'
   gem 'rails_12factor'
 end
 
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 gem 'devise'
 gem 'carrierwave'
 gem 'friendly_id', '~> 5.0.0'
